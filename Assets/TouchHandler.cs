@@ -1,0 +1,36 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TouchHandler : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        /*foreach (Touch touch in Input.touches)
+        {
+
+
+        }
+        */
+
+        if  (Input.touchCount > 0)
+        {
+            var primeiroDedo = Input.GetTouch(0);
+            if (primeiroDedo.phase == TouchPhase.Began)
+            {
+                Debug.Log("Touch Began");
+            }
+
+            var segundoDedo = Input.GetTouch(1);
+        }
+        
+    }
+}
