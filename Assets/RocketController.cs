@@ -17,27 +17,31 @@ public class RocketController : MonoBehaviour
     public float limite_angular = 90;
     public ParticleSystem particles;
     public AudioClip RocketSound;
+   
 
- 
     bool touch = false;
 
     Rigidbody rb;
 
     public int totalCoins = 0;
 
+    public static Vector3 startPosition;
+
+
+
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-      
-
+        startPosition = transform.position;
+        
     }
 
 
     // Start is called before the first frame update
     void Start()
     {
- 
+        
 
     }
 
@@ -68,10 +72,7 @@ public class RocketController : MonoBehaviour
 
             }
            
-          
-
-
-
+         
 
 
             // if (touch.position.x > (screenWidth / 2))
@@ -92,9 +93,6 @@ public class RocketController : MonoBehaviour
 
 
             //}
-
-
-
 
 
 
@@ -156,12 +154,12 @@ public class RocketController : MonoBehaviour
         if (touch)
         {
         //rb.AddForce(Vector3.up * thrusterForce * Time.deltaTime);
-        particles.Play();
+            particles.Play();
         }
 
         else
         {
-          particles.Stop();
+            particles.Stop();
           
             
         }

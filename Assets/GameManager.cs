@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
-
-    
+public class GameManager : MonoBehaviour  
 {
     bool gameHasEnded = false;
+
+    [SerializeField]
+    GameObject rocket;
+    static Vector3 startPosition;
+
+
 
     public void GameOver()
     {
@@ -15,6 +19,8 @@ public class GameManager : MonoBehaviour
         {
             gameHasEnded = true;
             Debug.Log("GameOver");
+            //Restart();
+            //Invoke("Restart", 1);
             Restart();
         }
         
@@ -23,7 +29,8 @@ public class GameManager : MonoBehaviour
 
     void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        rocket.transform.position = RocketController.startPosition;
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
     
