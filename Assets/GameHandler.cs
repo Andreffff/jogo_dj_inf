@@ -10,9 +10,11 @@ public class GameHandler : MonoBehaviour
     public TextMeshProUGUI CoinText;
     public int totalCoins;
     public GameObject rocket;
-    
+
+
+
     // Start is called before the first frame update
-  
+
 
     // Update is called once per frame
     void Update()
@@ -31,4 +33,6 @@ public class GameHandler : MonoBehaviour
         SceneManager.LoadScene("Menu");
         Time.timeScale = 1;
     }
+
+    
 }

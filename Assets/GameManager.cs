@@ -13,6 +13,10 @@ public class GameManager : MonoBehaviour
 
     public static bool gameOver;
     public GameObject gameOverPanel;
+    public GameObject pausePanel;
+    public GameObject PauseButton;
+
+    public static bool isGamePaused = false;
 
     private void Start()
     {
@@ -34,6 +38,24 @@ public class GameManager : MonoBehaviour
         
 
     }
+
+    public void Pause()
+    {
+        if (Time.timeScale == 1)
+        {
+            Time.timeScale = 0;
+            pausePanel.SetActive(true);
+            PauseButton.SetActive(false);
+
+        }
+        else if (Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+            pausePanel.SetActive(false);
+            PauseButton.SetActive(true);
+        }
+    }
+
 
     void Restart()
     {
