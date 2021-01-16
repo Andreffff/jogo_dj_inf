@@ -13,6 +13,10 @@ public class GameManager : MonoBehaviour
 
     public static bool gameOver;
     public GameObject gameOverPanel;
+
+    public static bool levelWin;
+    public GameObject levelCompletePanel;
+
     public GameObject pausePanel;
     public GameObject PauseButton;
 
@@ -21,9 +25,9 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         gameOver= false;
+        levelWin = false;
         Time.timeScale = 1;
     }
-
 
     public void GameOver()
     {
@@ -54,6 +58,18 @@ public class GameManager : MonoBehaviour
             pausePanel.SetActive(false);
             PauseButton.SetActive(true);
         }
+    }
+
+    public void  LevelWin()
+    {
+        if (levelWin)
+        {
+            gameHasEnded = true;
+            Time.timeScale = 0;
+            levelCompletePanel.SetActive(true);
+            PauseButton.SetActive(false);
+        }
+
     }
 
 

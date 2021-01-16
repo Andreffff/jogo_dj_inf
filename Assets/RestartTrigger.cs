@@ -21,5 +21,15 @@ public class RestartTrigger : MonoBehaviour
 
         }
 
+        if (collision.gameObject.tag == "Finish")
+        {
+            GameManager.levelWin = true;
+            //player.transform.position = RocketController.startPosition;
+            FindObjectOfType<GameManager>().LevelWin();
+
+
+        }
+
+
     }
 }

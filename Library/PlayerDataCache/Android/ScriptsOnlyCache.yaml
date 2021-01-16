@@ -35,7 +35,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
-    - TMPro.TextMeshProUGUI
     Unity.Timeline.Editor.dll:
     - UnityEditor.Timeline.SequenceHierarchy
     - UnityEditor.Timeline.TimelineWindow
@@ -254,13 +253,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13570}
     - Class: 114
-      Script: {instanceID: 13688}
-    - Class: 114
       Script: {instanceID: 13730}
     - Class: 114
       Script: {instanceID: 13774}
-    - Class: 114
-      Script: {instanceID: 14076}
     - Class: 114
       Script: {instanceID: 14186}
     - Class: 114
@@ -442,7 +437,7 @@ ScriptsOnlyBuild:
     className: MotionBlur
   - hash:
       serializedVersion: 2
-      Hash: 569365295959d9fd67e6288bdb7b4caf
+      Hash: 96a6aed70b16d3134658766669303771
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameHandler
@@ -1000,7 +995,7 @@ ScriptsOnlyBuild:
     className: MenuManager
   - hash:
       serializedVersion: 2
-      Hash: 03daab0f9867b68b274d4df8584bfde7
+      Hash: d395c2cd92891e6ebc2b6f8100d3fe19
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager

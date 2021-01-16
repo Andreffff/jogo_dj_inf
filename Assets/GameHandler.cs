@@ -7,10 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour
 {
-    public TextMeshProUGUI CoinText;
+    public Text CoinText;
     public int totalCoins;
     public GameObject rocket;
-
+    public Text scoreFinalText;
 
 
     // Start is called before the first frame update
@@ -20,6 +20,7 @@ public class GameHandler : MonoBehaviour
     void Update()
     {
         CoinText.text = "Coins : " + totalCoins;
+        scoreFinalText.text = "Score: " + totalCoins;
     }
 
     public void ReplayGame()
