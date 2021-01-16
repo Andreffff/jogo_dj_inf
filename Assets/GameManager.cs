@@ -11,17 +11,25 @@ public class GameManager : MonoBehaviour
     GameObject rocket;
     static Vector3 startPosition;
 
+    public static bool gameOver;
+    public GameObject gameOverPanel;
+
+    private void Start()
+    {
+        gameOver= false;
+        Time.timeScale = 1;
+    }
 
 
     public void GameOver()
     {
-        if (gameHasEnded == false)
+        if (gameOver)
         {
             gameHasEnded = true;
-            Debug.Log("GameOver");
+            Time.timeScale = 0;
+            gameOverPanel.SetActive(true);
+            //Debug.Log("GameOver");
             //Restart();
-            //Invoke("Restart", 1);
-            Restart();
         }
         
 
@@ -29,7 +37,7 @@ public class GameManager : MonoBehaviour
 
     void Restart()
     {
-        rocket.transform.position = RocketController.startPosition;
+        //rocket.transform.position = RocketController.startPosition;
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     

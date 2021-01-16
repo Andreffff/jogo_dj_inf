@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
+    <Compile Include="Assets\AstronautController.cs" />
     <Compile Include="Assets\AurynSky\WinterArena\Scripts\ChestDemo.cs" />
     <Compile Include="Assets\AurynSky\WinterArena\Scripts\Rotator.cs" />
     <Compile Include="Assets\BackgroundSoundManager.cs" />
@@ -85,7 +86,20 @@
     <Compile Include="Assets\Jammo-Character\Scripts\MovementInput.cs" />
     <Compile Include="Assets\LevelLoader.cs" />
     <Compile Include="Assets\MenuManager.cs" />
+    <Compile Include="Assets\NPC1Dest.cs" />
+    <Compile Include="Assets\NPC2Dest.cs" />
+    <Compile Include="Assets\NPC3Dest.cs" />
+    <Compile Include="Assets\NPC4Dest.cs" />
+    <Compile Include="Assets\NPC5Dest.cs" />
+    <Compile Include="Assets\NPC6Dest.cs" />
+    <Compile Include="Assets\NPC7Dest.cs" />
+    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
+    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
+    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
+    <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
+    <Compile Include="Assets\PanelGameOverManager.cs" />
     <Compile Include="Assets\PlayerBehaviour.cs" />
+    <Compile Include="Assets\PlayerManager.cs" />
     <Compile Include="Assets\RestartTrigger.cs" />
     <Compile Include="Assets\RocketController.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
