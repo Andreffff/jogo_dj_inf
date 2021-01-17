@@ -130,17 +130,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13708}
     - Class: 114
-      Script: {instanceID: 13964}
+      Script: {instanceID: 13962}
     - Class: 114
-      Script: {instanceID: 14182}
+      Script: {instanceID: 14180}
     - Class: 114
-      Script: {instanceID: 14498}
+      Script: {instanceID: 14496}
     - Class: 114
-      Script: {instanceID: 14684}
+      Script: {instanceID: 14682}
     - Class: 114
-      Script: {instanceID: 14854}
+      Script: {instanceID: 14852}
     - Class: 114
-      Script: {instanceID: 14918}
+      Script: {instanceID: 14916}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -251,13 +251,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13726}
     - Class: 114
-      Script: {instanceID: 14182}
+      Script: {instanceID: 14180}
     - Class: 114
-      Script: {instanceID: 14450}
+      Script: {instanceID: 14448}
     - Class: 114
-      Script: {instanceID: 14528}
+      Script: {instanceID: 14526}
     - Class: 114
-      Script: {instanceID: 14854}
+      Script: {instanceID: 14852}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1677,6 +1677,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: eef1094579fbacdebe8bc15f6dbc04ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NPC8Dest
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
