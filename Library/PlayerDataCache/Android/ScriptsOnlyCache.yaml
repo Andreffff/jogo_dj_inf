@@ -7,7 +7,6 @@ ScriptsOnlyBuild:
     - CameraRotator
     - CoinScript
     - Floorobstacle
-    - FrontCamera
     - GameHandler
     - GameManager
     - LevelLoader
@@ -20,7 +19,6 @@ ScriptsOnlyBuild:
     - NPC6Dest
     - NPC7Dest
     - Player
-    - PlayerManager
     - RestartTrigger
     - RocketController
     - TurnTheGameOn.ArrowWaypointer.Waypoint
@@ -41,8 +39,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -249,11 +249,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13236}
     - Class: 114
-      Script: {instanceID: 13566}
-    - Class: 114
       Script: {instanceID: 13726}
-    - Class: 114
-      Script: {instanceID: 13770}
     - Class: 114
       Script: {instanceID: 14182}
     - Class: 114
@@ -1243,12 +1239,6 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: 
     className: CinemachineTouchInputMapper
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerManager
   - hash:
       serializedVersion: 2
       Hash: df76de5fb2b27007d514fdb38b91cf89

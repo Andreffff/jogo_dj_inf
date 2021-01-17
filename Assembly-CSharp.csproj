@@ -104,7 +104,6 @@
     <Compile Include="Assets\Scripts\NPC7Dest.cs" />
     <Compile Include="Assets\Scripts\PanelGameOverManager.cs" />
     <Compile Include="Assets\Scripts\PlayerBehaviour.cs" />
-    <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\RestartTrigger.cs" />
     <Compile Include="Assets\Scripts\RocketController.cs" />
     <Compile Include="Assets\Scripts\SoundManagerScript.cs" />
