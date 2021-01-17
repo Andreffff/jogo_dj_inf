@@ -11,6 +11,7 @@ public class GameHandler : MonoBehaviour
     public int totalCoins;
     public GameObject rocket;
     public Text scoreFinalText;
+    public Text textAboutScore;
 
     public GameObject tutorialRightPanel;
     public GameObject tutorialLeftPanel;
@@ -27,6 +28,13 @@ public class GameHandler : MonoBehaviour
     {
         CoinText.text = "Coins : " + totalCoins;
         scoreFinalText.text = "Score: " + totalCoins;
+        if (totalCoins == 54)
+        {
+            textAboutScore.text = "Good job! You made the max score!";
+        } else
+        {
+            textAboutScore.text = "Good job, but You left some coins behind!";
+        }
     }
 
     public void ReplayGame()

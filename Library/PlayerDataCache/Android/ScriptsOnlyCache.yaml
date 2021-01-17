@@ -1,5 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - ReadmeEditor
     Assembly-CSharp.dll:
     - AstronautController
     - BackgroundSoundManager
@@ -19,6 +21,7 @@ ScriptsOnlyBuild:
     - NPC6Dest
     - NPC7Dest
     - Player
+    - Readme
     - RestartTrigger
     - RocketController
     - TurnTheGameOn.ArrowWaypointer.Waypoint
@@ -39,10 +42,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -130,17 +131,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13708}
     - Class: 114
-      Script: {instanceID: 13962}
+      Script: {instanceID: 13964}
     - Class: 114
-      Script: {instanceID: 14180}
+      Script: {instanceID: 14182}
     - Class: 114
-      Script: {instanceID: 14496}
+      Script: {instanceID: 14498}
     - Class: 114
-      Script: {instanceID: 14682}
+      Script: {instanceID: 14684}
     - Class: 114
-      Script: {instanceID: 14852}
+      Script: {instanceID: 14854}
     - Class: 114
-      Script: {instanceID: 14916}
+      Script: {instanceID: 14918}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -251,13 +252,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13726}
     - Class: 114
-      Script: {instanceID: 14180}
+      Script: {instanceID: 14182}
     - Class: 114
-      Script: {instanceID: 14448}
+      Script: {instanceID: 14450}
     - Class: 114
-      Script: {instanceID: 14526}
+      Script: {instanceID: 14528}
     - Class: 114
-      Script: {instanceID: 14852}
+      Script: {instanceID: 14854}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -431,7 +432,7 @@ ScriptsOnlyBuild:
     className: MotionBlur
   - hash:
       serializedVersion: 2
-      Hash: 288129f65dd2bc96bf616eb364c6cbb5
+      Hash: c12bf94582309108f1c3a6e806bf2646
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameHandler
@@ -1241,6 +1242,12 @@ ScriptsOnlyBuild:
     className: CinemachineTouchInputMapper
   - hash:
       serializedVersion: 2
+      Hash: eef1094579fbacdebe8bc15f6dbc04ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NPC8Dest
+  - hash:
+      serializedVersion: 2
       Hash: df76de5fb2b27007d514fdb38b91cf89
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -1677,12 +1684,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: eef1094579fbacdebe8bc15f6dbc04ac
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NPC8Dest
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
