@@ -12,6 +12,12 @@ public class GameHandler : MonoBehaviour
     public GameObject rocket;
     public Text scoreFinalText;
 
+    public GameObject tutorialRightPanel;
+    public GameObject tutorialLeftPanel;
+    public GameObject LeftBtn;
+    public GameObject RightBtn;
+
+
 
     // Start is called before the first frame update
 
@@ -35,5 +41,21 @@ public class GameHandler : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    
+    public void DissapearBtnLeftTutorial()
+    {
+        LeftBtn.SetActive(false);
+        tutorialLeftPanel.SetActive(false);
+        
+        
+        
+    }
+
+    public void DissapearBtnRightTutorial()
+    {
+        RightBtn.SetActive(false);
+        tutorialRightPanel.SetActive(false);
+
+    }
+
+
 }

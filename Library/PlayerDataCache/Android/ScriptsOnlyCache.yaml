@@ -41,10 +41,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -437,7 +435,7 @@ ScriptsOnlyBuild:
     className: MotionBlur
   - hash:
       serializedVersion: 2
-      Hash: 96a6aed70b16d3134658766669303771
+      Hash: 288129f65dd2bc96bf616eb364c6cbb5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameHandler
@@ -995,7 +993,7 @@ ScriptsOnlyBuild:
     className: MenuManager
   - hash:
       serializedVersion: 2
-      Hash: d395c2cd92891e6ebc2b6f8100d3fe19
+      Hash: f1c86de4f137192bd4b9fbdc7e0c49b5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager

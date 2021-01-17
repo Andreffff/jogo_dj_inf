@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject pausePanel;
     public GameObject PauseButton;
+    public GameObject coinsPanel;
 
     public static bool isGamePaused = false;
 
@@ -68,6 +69,7 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0;
             levelCompletePanel.SetActive(true);
             PauseButton.SetActive(false);
+            coinsPanel.SetActive(false);
         }
 
     }
